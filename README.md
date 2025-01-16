@@ -93,6 +93,12 @@ az webapp deployment source config --name MyWebApp --resource-group MyResourceGr
 ```bash
 az webapp list --resource-group MyResourceGroup --output table
 ```
+- **Créer une application webapp dans un plan appservice utilisant un container**
+```bash
+az webapp create --name authwebappdocker --resource-group auth-fastapi-template --plan fastapiauthtemplate --deployment-container-image-name acrauthtemplate.azurecr.io/nom_de_ton_image:tag
+
+```
+
 
 ## 🌍 Réseau et Sécurité
 
